@@ -103,6 +103,7 @@ def handle_photo():
         filename = file_list[i]
         date_str, info = filename.split('_')
         info, _ = info.split(".")
+        print("-------->>>>",date_str)
         date = datetime.strptime(date_str, "%Y-%m-%d")
         year_month = date_str[0:7]            
         if i == 0:  # 处理第一个文件
