@@ -4,7 +4,7 @@ import os
 import sys
 import json
 from datetime import datetime
-import graphics
+#import graphics
 
 # 定义压缩比，数值越大，压缩越小
 SIZE_normal = 1.0
