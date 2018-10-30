@@ -103,7 +103,7 @@ def handle_photo():
         filename = file_list[i]
         date_str, info = filename.split('_')
         info, _ = info.split(".")
-        date = datetime.strptime(date_str, "%Y-%m-%d")
+        date = datetime.strptime(date_str, "%YYYY%mm%dd")
         year_month = date_str[0:7]            
         if i == 0:  # 处理第一个文件
             new_dict = {"date": year_month, "arr":{'year': date.year,
